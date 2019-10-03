@@ -8,8 +8,11 @@ Welcome to DocumentationFlavourAndDocker's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
+   CoVaCS_pipeline
+   GDC_pipeline
+   refdata
+   docker_galaxy_istance   
 
 
 Indices and tables
