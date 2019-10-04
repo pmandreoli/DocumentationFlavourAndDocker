@@ -44,6 +44,25 @@ The different steps are performed as follows:
 4. The *Variant annotation* step is performed for each of the variant calling step The software used is the Variant Effect Predictor (VEP)(McLaren et al. 2016), made available by Ensembl. VEP takes a VCF in input and reports the genes and transcripts affected by the variants, the location of the variants, the consequences of the variant on the protein sequence, and any variant already catalogued in the database of the 1000 Genome project. (`Wrapper Variant Annotation <https://testtoolshed.g2.bx.psu.edu/view/elixir-it/vep86_vcf2maf/ca1e48c52db9>`_ )
 
 
+GDC somatic variant reference data
+##################################
+
+CVMFS data.galaxyproject.org
+----------------------------
+
+- Reference genome Human(Homo sapiens)(b73):hg_g1k_v37
+- As vcf the user have to download one of the variant “.vcf” files related to the b73 genome present in the ftp of `GATK bundle <https://software.broadinstitute.org/gatk/download/bundle>`_ and upload it on the Galaxy history
+
+CVMFS elixir-italy.galaxy.refdata 
+---------------------------------
+
+- Reference genome hg19_bundle (Reference Genome indexed for BWA and GATK downloaded from `GATK bundle <https://software.broadinstitute.org/gatk/download/bundle>`_ ucsc.hg19.fasta)
+- As vcf the user have to download one of the variant “.vcf” files related to the hg19 genome present in the ftp of `GATK bundle <https://software.broadinstitute.org/gatk/download/bundle>`_ and upload it on the Galaxy history
+
+
+
+
+
 GDC somatic variant Galaxy workflow
 ###################################
 
