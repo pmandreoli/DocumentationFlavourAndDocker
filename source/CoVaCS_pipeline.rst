@@ -19,9 +19,9 @@ The implementation of CoVaCS on Galaxy perform the following pipeline steps:
    5. Variant selection
    6. Variant annotation
 
-Every step of the pipeline is performed by one or more bioinformatics tools:
+Each step of the pipeline is performed by one or more bioinformatics tools:
 
-  1. Quality control of raw reads is performed by FastQC.This software provides quality control report on raw sequence data spotting problems which originate either in the sequencer or in the starting library material.The report gives a quick impression of the quality of raw data, making the user aware of any quality problems before making any further analysis. ( `wrapper FastQC <https://toolshed.g2.bx.psu.edu/repository?repository_id=ca249a25748b71a3>`_ ) 
+  1. Quality control of raw reads is performed by FastQC. This software provides quality control report on raw sequence data spotting problems which originate either in the sequencer or in the starting library material.The report gives a quick impression of the quality of raw data, making the user aware of any quality problems before making any further analysis. ( `wrapper FastQC <https://toolshed.g2.bx.psu.edu/repository?repository_id=ca249a25748b71a3>`_ ) 
 
   2. Quality trimming step is performed by Trimmomatic. Taking into account the data problems encountered in the previous step, Trimmomatic offer the possibility to optimize the raw reads length. It includes several options for read trimming and filtering. ( `wrapper Trimmomatic <https://toolshed.g2.bx.psu.edu/repository?repository_id=ef9e620e9ac844b3>`_ )
        
@@ -93,9 +93,6 @@ The first workflow was implemented to run the standard pipeline of CoVaCS (fig.1
    :align: center
 
 .. centered:: fig.1  CoVaCS standard workflow screenshot
-
-
-
 
 
 

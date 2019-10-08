@@ -12,10 +12,6 @@ Implementation on Galaxy
 
 The analysis is performed in different steps:
 
-
-
-I asked a similar question here. Try like this:
-
    1. Quality check and trimming
    2. Genome Alignment
    3. Alignment Co-Cleaning
@@ -58,9 +54,6 @@ CVMFS elixir-italy.galaxy.refdata
 
 - Reference genome hg19_bundle (Reference Genome indexed for BWA and GATK downloaded from `GATK bundle <https://software.broadinstitute.org/gatk/download/bundle>`_ ucsc.hg19.fasta)
 - As vcf the user have to download one of the variant “.vcf” files related to the hg19 genome present in the ftp of `GATK bundle <https://software.broadinstitute.org/gatk/download/bundle>`_ and upload it on the Galaxy history
-
-
-
 
 
 GDC somatic variant Galaxy workflow
