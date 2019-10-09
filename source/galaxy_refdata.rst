@@ -78,6 +78,5 @@ elixir-italy.covacs.refdata
 - location: contains the .loc file and the tool_data_table.xml file that will be used by galaxy CoVaCS
 
 
-
-more information at https://docs.google.com/spreadsheets/d/1l0dbaVuT4qiXMGevrYtkRDvsNa052WT8WbBg_dFpqFM/edit?usp=sharing 
+`more information <https://docs.google.com/spreadsheets/d/1l0dbaVuT4qiXMGevrYtkRDvsNa052WT8WbBg_dFpqFM/edit?usp=sharing>`_ 
 

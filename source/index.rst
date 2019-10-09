@@ -9,10 +9,10 @@ Welcome to DocumentationFlavourAndDocker's documentation!
 .. toctree::
    :maxdepth: 2
 
-   CoVaCS_pipeline
-   GDC_pipeline
-   refdata
-   docker_galaxy_istance   
+   galaxy_covacs 
+   galaxy_gdc
+   galaxy_refdata
+   galaxy_docker  
 
 
 Indices and tables
