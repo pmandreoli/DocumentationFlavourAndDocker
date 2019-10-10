@@ -26,18 +26,19 @@ Environment variables
 
 The Galaxy docker configuration is slighty different from the default one (link bgruening), only few environment variable were changed to make the galaxy configuration on Docker like the one present on the virtual machine.
 
-:: 
+::
 
-  ``GALAXY_CONFIG_TOOL_DATA_TABLE_CONFIG_PATH=`` <tool_data_table_conf.xml specific for the flavor> 
-  ``GALAXY_CONDA_PREFIX=`` <docker path to _conda> 
-  ``GALAXY_CONFIG_ADMIN_USERS=`` <admin_user email selected in the laniakea dashboard>
-  ``GALAXY_CONFIG_BRAND=``  <brand selected in  selected in the laniakea dashboard> 
-  ``GALAXY_CONFIG_REQUIRE_LOGIN=``true
-  ``GALAXY_CONFIG_ALLOW_USER_CREATION=``true
-  ``GALAXY_CONFIG_ALLOW_USER_IMPERSONATION=``false
-  ``GALAXY_CONFIG_NEW_USER_DATASET_ACCESS_ROLE_DEFAULT_PRIVATE=`` true
-  ``GALAXY_CONFIG_CONDA_AUTO_INIT=``true
-  ``GALAXY_CONFIG_CONDA_AUTO_INSTALL=``true
+  GALAXY_CONFIG_TOOL_DATA_TABLE_CONFIG_PATH=<tool_data_table_conf.xml specific for the flavor> 
+  GALAXY_CONDA_PREFIX=<docker path to _conda> 
+  GALAXY_CONFIG_ADMIN_USERS=<admin_user email selected in the laniakea dashboard>
+  GALAXY_CONFIG_BRAND=<brand selected in  selected in the laniakea dashboard> 
+  GALAXY_CONFIG_REQUIRE_LOGIN=true
+  GALAXY_CONFIG_ALLOW_USER_CREATION=true
+  GALAXY_CONFIG_ALLOW_USER_IMPERSONATION=false
+  GALAXY_CONFIG_NEW_USER_DATASET_ACCESS_ROLE_DEFAULT_PRIVATE=true
+  GALAXY_CONFIG_CONDA_AUTO_INIT=true
+  GALAXY_CONFIG_CONDA_AUTO_INSTALL=true
+  
 
 *******************  
 CVMFS configuration
@@ -52,9 +53,9 @@ after the docker run the selected Cern vm filesystem is mounted in ``/cvmfs`` di
 Galaxy docker use
 -----------------
 
-*********************
-Galaxy log inspection
-*********************
+****************************
+Galaxy docker log inspection
+****************************
 
 in order to check the galaxy log from the vm use the command
 
@@ -80,11 +81,29 @@ In order to access to the docker execute the command
 Location of principal directories inside the Galaxydocker
 #########################################################
 
-the principal galaxy directory location are present in ``/export``:
+the mains Galaxy directory are present in ``/export``:
 
 - ftp: ``/export/ftp``
 - database: ``/export/database``
 - conda: ``/export/tool_deps/_conda``
 
+##########################
+Check Galaxy configuration
+##########################
+
+in order to see specific Galaxy configuration explore the docker environment variables
+
+::
+
+  $ echo $GALAXY_CONFIG
+
+------------------------
 
 
+-------------------------------
+Galaxy Docker use videotutorial
+-------------------------------
+
+.. raw:: html
+
+      <a href="https://asciinema.org/a/273493" target="_blank"><img src="https://asciinema.org/a/273493.svg" /></a>
