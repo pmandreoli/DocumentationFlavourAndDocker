@@ -20,6 +20,14 @@ The docker engine is installed using the role indigo-dc.docker and the docker im
 Galaxy docker configuration
 ---------------------------
 
+*******************
+Configuration Files
+*******************
+
+- ``/etc/galaxy/.myenv.sh`` file containing and define the environmental variable of the container
+- ``/etc/galaxy/tool_data_tables`` directory containing the tool_data_table_conf.xml files
+- ``/etc/galaxy/delete_galaxy_user.py`` python script used to delete the default admin user  
+
 *********************
 Environment variables 
 *********************
@@ -44,14 +52,12 @@ The Galaxy docker configuration is slighty different from the default one (link 
 CVMFS configuration
 *******************
 
-the config file are created using jinja2 for the cvmfs selected in the dashboard and mounted inside the docker directory /etc/cvmfs
-
-after the docker run the selected Cern vm filesystem is mounted in ``/cvmfs`` directory 
+the cvmfs selected in the dashboard is automatically configured and mounted inside the docker directory ``/cvmfs``.The cvmfs configuration files are in the directory ``/etc/cvmfs`` both in the VM and in the docker.  
 
 
------------------
-Galaxy docker use
------------------
+-------------------
+Galaxy docker usage
+-------------------
 
 ****************************
 Galaxy docker log inspection
@@ -101,7 +107,7 @@ in order to see specific Galaxy configuration explore the docker environment var
 
 
 -------------------------------
-Galaxy Docker use videotutorial
+Galaxy Docker usage videotutorial
 -------------------------------
 
 .. raw:: html
