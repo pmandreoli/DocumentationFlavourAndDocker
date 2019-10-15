@@ -83,9 +83,9 @@ In order to access to the docker execute the command
 
 ---------------------
 
-#########################################################
+####################################################
 Location of main directories inside the Galaxydocker
-#########################################################
+####################################################
 
 the mains Galaxy directory are present in ``/export``:
 
@@ -106,9 +106,9 @@ in order to see specific Galaxy configuration explore the docker environment var
 ------------------------
 
 
--------------------------------
+---------------------------------
 Galaxy Docker usage videotutorial
--------------------------------
+---------------------------------
 
 .. raw:: html
 
