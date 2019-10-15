@@ -1,8 +1,8 @@
 Galaxy docker instance on Laniakea
 ==================================
 
-the ansible role ansible-role-galaxycloud-docker run Galaxy docker inside a Virtual Machine Centos 7.
-support the following docker image:
+The Laniakea's Galaxy Docker application run a Galaxy Docker container inside a Centos 7 virtual machine.
+It support the following Docker image:
 
 - `bgruening/galaxy-stable <https://hub.docker.com/r/bgruening/galaxy-stable/tags>`_
 - `bgruening/galaxy-rna-workbench <https://hub.docker.com/r/bgruening/galaxy-rna-workbench/tags>`_
@@ -10,23 +10,13 @@ support the following docker image:
 - `laniakeacloud/galaxy-covacs:19.01_nowf <https://hub.docker.com/r/laniakeacloud/galaxy-covacs/tags>`_
 - `laniakeacloud/galaxy-gdc_somatic_variant:19.01_nowf <https://hub.docker.com/r/laniakeacloud/galaxy-gdc_somatic_variant/tags>`_
 
---------------------------
-Docker engine installation
---------------------------
-
-The docker engine is installed using the role indigo-dc.docker and the docker image location in defined on directory ``/export``
-
----------------------------
-Galaxy docker configuration
----------------------------
 
 *******************
 Configuration Files
 *******************
 
-- ``/etc/galaxy/.myenv.sh`` file containing and define the environmental variable of the container
+- ``/etc/galaxy/.myenv.sh`` file that contain and define the environmental variables of the container
 - ``/etc/galaxy/tool_data_tables`` directory containing the tool_data_table_conf.xml files
-- ``/etc/galaxy/delete_galaxy_user.py`` python script used to delete the default admin user  
 
 *********************
 Environment variables 
@@ -52,8 +42,8 @@ The Galaxy docker configuration is slighty different from the default one (link 
 CVMFS configuration
 *******************
 
-the cvmfs selected in the dashboard is automatically configured and mounted inside the docker directory ``/cvmfs``.The cvmfs configuration files are in the directory ``/etc/cvmfs`` both in the VM and in the docker.  
-
+The cvmfs selected in the lanikaea dashboard is automatically configured and mounted inside the docker directory ``/cvmfs``.
+The cvmfs configuration files are in the directory ``/etc/cvmfs`` both in the VM and in the container.  
 
 -------------------
 Galaxy docker usage
@@ -62,8 +52,7 @@ Galaxy docker usage
 ****************************
 Galaxy docker log inspection
 ****************************
-
-in order to check the galaxy log from the vm use the command
+Enter in the Virtual Machine using ssh protocol an use the command:
 
 ::
 
@@ -75,7 +64,7 @@ in order to check the galaxy log from the vm use the command
 Enter inside galaxydocker
 *************************
 
-In order to access to the docker execute the command
+In order to access to the Galaxy container execute the command
 
 ::
 
@@ -86,8 +75,7 @@ In order to access to the docker execute the command
 ####################################################
 Location of main directories inside the Galaxydocker
 ####################################################
-
-the mains Galaxy directory are present in ``/export``:
+Inside the container the mains Galaxy directory are present in ``/export``:
 
 - ftp: ``/export/ftp``
 - database: ``/export/database``
@@ -97,7 +85,7 @@ the mains Galaxy directory are present in ``/export``:
 Check Galaxy configuration
 ##########################
 
-in order to see specific Galaxy configuration explore the docker environment variables
+In order to see specific Galaxy configuration explore the docker environment variables using, inside the container, the command: 
 
 ::
 
