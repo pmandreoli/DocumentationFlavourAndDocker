@@ -45,13 +45,13 @@ CVMFS configuration
 The cvmfs selected in the lanikaea dashboard is automatically configured and mounted inside the docker directory ``/cvmfs``.
 The cvmfs configuration files are in the directory ``/etc/cvmfs`` both in the VM and in the container.  
 
--------------------
+*******************
 Galaxy docker usage
--------------------
+*******************
 
-****************************
+----------------------------
 Galaxy docker log inspection
-****************************
+----------------------------
 Enter in the Virtual Machine using ssh protocol an use the command:
 
 ::
@@ -60,9 +60,9 @@ Enter in the Virtual Machine using ssh protocol an use the command:
 
 ---------------------
 
-*************************
+-------------------------
 Enter inside galaxydocker
-*************************
+-------------------------
 
 In order to access to the Galaxy container execute the command
 
@@ -72,18 +72,18 @@ In order to access to the Galaxy container execute the command
 
 ---------------------
 
-####################################################
+----------------------------------------------------
 Location of main directories inside the Galaxydocker
-####################################################
+----------------------------------------------------
 Inside the container the mains Galaxy directory are present in ``/export``:
 
 - ftp: ``/export/ftp``
 - database: ``/export/database``
 - conda: ``/export/tool_deps/_conda``
 
-##########################
+--------------------------
 Check Galaxy configuration
-##########################
+--------------------------
 
 In order to see specific Galaxy configuration explore the docker environment variables using, inside the container, the command: 
 
